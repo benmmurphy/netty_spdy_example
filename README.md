@@ -1,3 +1,7 @@
+Requires Java 7
+
+On OSX you can download Java 7 here: http://jdk7.java.net/macportpreview/
+
 For spdy to work with chrome it must run the ssl server on port 443. However,
 this is a big pain to do because of permissions. The ssl server is set to run on port 4567. You
 must forward 4567 to 443 for spdy to work or change the ssl listen port in SpdyServer.scala.
