@@ -12,5 +12,14 @@ object SpdyServer {
 
     bootstrap.setPipelineFactory(new SpdyServerPipelineFactory())
     bootstrap.bind(new InetSocketAddress(4567))
+
+
+    val bootstrap2 = new ServerBootstrap(new NioServerSocketChannelFactory(
+      Executors.newCachedThreadPool(),
+      Executors.newCachedThreadPool()))
+
+    bootstrap2.setPipelineFactory(new HttpServerPipelineFactory())
+    bootstrap2.bind(new InetSocketAddress(4568))
+ 
   }
 }

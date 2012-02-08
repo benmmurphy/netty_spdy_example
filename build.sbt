@@ -4,8 +4,6 @@ version := "1.0"
 
 scalaVersion := "2.9.0"
 
-libraryDependencies += "com.ning" % "async-http-client" % "1.6.4"
-
 libraryDependencies += "io.netty" % "netty" % "3.3.1.Final"
 
 libraryDependencies += "commons-io" % "commons-io" % "2.0.1"
